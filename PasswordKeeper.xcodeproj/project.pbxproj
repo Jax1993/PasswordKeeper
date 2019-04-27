@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF6B48D2227455390074AB15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48D1227455390074AB15 /* AppDelegate.swift */; };
+		BF6B48D4227455390074AB15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48D3227455390074AB15 /* ViewController.swift */; };
+		BF6B48D7227455390074AB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48D5227455390074AB15 /* Main.storyboard */; };
+		BF6B48D92274553A0074AB15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48D82274553A0074AB15 /* Assets.xcassets */; };
+		BF6B48DC2274553A0074AB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */; };
+		BF6B48E72274553A0074AB15 /* PasswordKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48E62274553A0074AB15 /* PasswordKeeperTests.swift */; };
+		BF6B48F22274553A0074AB15 /* PasswordKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF6B48E32274553A0074AB15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF6B48C6227455390074AB15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF6B48CD227455390074AB15;
+			remoteInfo = PasswordKeeper;
+		};
+		BF6B48EE2274553A0074AB15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF6B48C6227455390074AB15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF6B48CD227455390074AB15;
+			remoteInfo = PasswordKeeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF6B48CE227455390074AB15 /* PasswordKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6B48D1227455390074AB15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF6B48D3227455390074AB15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF6B48D6227455390074AB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF6B48D82274553A0074AB15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF6B48DB2274553A0074AB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF6B48DD2274553A0074AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6B48E22274553A0074AB15 /* PasswordKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6B48E62274553A0074AB15 /* PasswordKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeeperTests.swift; sourceTree = "<group>"; };
+		BF6B48E82274553A0074AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6B48ED2274553A0074AB15 /* PasswordKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeeperUITests.swift; sourceTree = "<group>"; };
+		BF6B48F32274553A0074AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF6B48CB227455390074AB15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6B48DF2274553A0074AB15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6B48EA2274553A0074AB15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF6B48C5227455390074AB15 = {
+			isa = PBXGroup;
+			children = (
+				BF6B48D0227455390074AB15 /* PasswordKeeper */,
+				BF6B48E52274553A0074AB15 /* PasswordKeeperTests */,
+				BF6B48F02274553A0074AB15 /* PasswordKeeperUITests */,
+				BF6B48CF227455390074AB15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF6B48CF227455390074AB15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF6B48CE227455390074AB15 /* PasswordKeeper.app */,
+				BF6B48E22274553A0074AB15 /* PasswordKeeperTests.xctest */,
+				BF6B48ED2274553A0074AB15 /* PasswordKeeperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF6B48D0227455390074AB15 /* PasswordKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				BF6B48D1227455390074AB15 /* AppDelegate.swift */,
+				BF6B48D3227455390074AB15 /* ViewController.swift */,
+				BF6B48D5227455390074AB15 /* Main.storyboard */,
+				BF6B48D82274553A0074AB15 /* Assets.xcassets */,
+				BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */,
+				BF6B48DD2274553A0074AB15 /* Info.plist */,
+			);
+			path = PasswordKeeper;
+			sourceTree = "<group>";
+		};
+		BF6B48E52274553A0074AB15 /* PasswordKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF6B48E62274553A0074AB15 /* PasswordKeeperTests.swift */,
+				BF6B48E82274553A0074AB15 /* Info.plist */,
+			);
+			path = PasswordKeeperTests;
+			sourceTree = "<group>";
+		};
+		BF6B48F02274553A0074AB15 /* PasswordKeeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */,
+				BF6B48F32274553A0074AB15 /* Info.plist */,
+			);
+			path = PasswordKeeperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF6B48CD227455390074AB15 /* PasswordKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF6B48F62274553A0074AB15 /* Build configuration list for PBXNativeTarget "PasswordKeeper" */;
+			buildPhases = (
+				BF6B48CA227455390074AB15 /* Sources */,
+				BF6B48CB227455390074AB15 /* Frameworks */,
+				BF6B48CC227455390074AB15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordKeeper;
+			productName = PasswordKeeper;
+			productReference = BF6B48CE227455390074AB15 /* PasswordKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF6B48E12274553A0074AB15 /* PasswordKeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF6B48F92274553A0074AB15 /* Build configuration list for PBXNativeTarget "PasswordKeeperTests" */;
+			buildPhases = (
+				BF6B48DE2274553A0074AB15 /* Sources */,
+				BF6B48DF2274553A0074AB15 /* Frameworks */,
+				BF6B48E02274553A0074AB15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF6B48E42274553A0074AB15 /* PBXTargetDependency */,
+			);
+			name = PasswordKeeperTests;
+			productName = PasswordKeeperTests;
+			productReference = BF6B48E22274553A0074AB15 /* PasswordKeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF6B48EC2274553A0074AB15 /* PasswordKeeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF6B48FC2274553A0074AB15 /* Build configuration list for PBXNativeTarget "PasswordKeeperUITests" */;
+			buildPhases = (
+				BF6B48E92274553A0074AB15 /* Sources */,
+				BF6B48EA2274553A0074AB15 /* Frameworks */,
+				BF6B48EB2274553A0074AB15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF6B48EF2274553A0074AB15 /* PBXTargetDependency */,
+			);
+			name = PasswordKeeperUITests;
+			productName = PasswordKeeperUITests;
+			productReference = BF6B48ED2274553A0074AB15 /* PasswordKeeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF6B48C6227455390074AB15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = jax;
+				TargetAttributes = {
+					BF6B48CD227455390074AB15 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					BF6B48E12274553A0074AB15 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BF6B48CD227455390074AB15;
+					};
+					BF6B48EC2274553A0074AB15 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BF6B48CD227455390074AB15;
+					};
+				};
+			};
+			buildConfigurationList = BF6B48C9227455390074AB15 /* Build configuration list for PBXProject "PasswordKeeper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF6B48C5227455390074AB15;
+			productRefGroup = BF6B48CF227455390074AB15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF6B48CD227455390074AB15 /* PasswordKeeper */,
+				BF6B48E12274553A0074AB15 /* PasswordKeeperTests */,
+				BF6B48EC2274553A0074AB15 /* PasswordKeeperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF6B48CC227455390074AB15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6B48DC2274553A0074AB15 /* LaunchScreen.storyboard in Resources */,
+				BF6B48D92274553A0074AB15 /* Assets.xcassets in Resources */,
+				BF6B48D7227455390074AB15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6B48E02274553A0074AB15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6B48EB2274553A0074AB15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF6B48CA227455390074AB15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6B48D4227455390074AB15 /* ViewController.swift in Sources */,
+				BF6B48D2227455390074AB15 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6B48DE2274553A0074AB15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6B48E72274553A0074AB15 /* PasswordKeeperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6B48E92274553A0074AB15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6B48F22274553A0074AB15 /* PasswordKeeperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF6B48E42274553A0074AB15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF6B48CD227455390074AB15 /* PasswordKeeper */;
+			targetProxy = BF6B48E32274553A0074AB15 /* PBXContainerItemProxy */;
+		};
+		BF6B48EF2274553A0074AB15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF6B48CD227455390074AB15 /* PasswordKeeper */;
+			targetProxy = BF6B48EE2274553A0074AB15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF6B48D5227455390074AB15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF6B48D6227455390074AB15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF6B48DB2274553A0074AB15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF6B48F42274553A0074AB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF6B48F52274553A0074AB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF6B48F72274553A0074AB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2URYBYKY6;
+				INFOPLIST_FILE = PasswordKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jax.me.PasswordKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF6B48F82274553A0074AB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2URYBYKY6;
+				INFOPLIST_FILE = PasswordKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jax.me.PasswordKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF6B48FA2274553A0074AB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2URYBYKY6;
+				INFOPLIST_FILE = PasswordKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jax.me.PasswordKeeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordKeeper.app/PasswordKeeper";
+			};
+			name = Debug;
+		};
+		BF6B48FB2274553A0074AB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2URYBYKY6;
+				INFOPLIST_FILE = PasswordKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jax.me.PasswordKeeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordKeeper.app/PasswordKeeper";
+			};
+			name = Release;
+		};
+		BF6B48FD2274553A0074AB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2URYBYKY6;
+				INFOPLIST_FILE = PasswordKeeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jax.me.PasswordKeeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasswordKeeper;
+			};
+			name = Debug;
+		};
+		BF6B48FE2274553A0074AB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2URYBYKY6;
+				INFOPLIST_FILE = PasswordKeeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jax.me.PasswordKeeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasswordKeeper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF6B48C9227455390074AB15 /* Build configuration list for PBXProject "PasswordKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6B48F42274553A0074AB15 /* Debug */,
+				BF6B48F52274553A0074AB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF6B48F62274553A0074AB15 /* Build configuration list for PBXNativeTarget "PasswordKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6B48F72274553A0074AB15 /* Debug */,
+				BF6B48F82274553A0074AB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF6B48F92274553A0074AB15 /* Build configuration list for PBXNativeTarget "PasswordKeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6B48FA2274553A0074AB15 /* Debug */,
+				BF6B48FB2274553A0074AB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF6B48FC2274553A0074AB15 /* Build configuration list for PBXNativeTarget "PasswordKeeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6B48FD2274553A0074AB15 /* Debug */,
+				BF6B48FE2274553A0074AB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF6B48C6227455390074AB15 /* Project object */;
+}
