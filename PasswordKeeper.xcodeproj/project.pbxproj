@@ -8,8 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		14A9AB147393E9407027E008 /* Pods_PasswordKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7724EAF457CBFE869751FC7 /* Pods_PasswordKeeper.framework */; };
+		BF5950942275F7AA00B7C06D /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */; };
+		BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950952275F7CB00B7C06D /* AppDelegateController.swift */; };
+		BF5950982275F7FD00B7C06D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950972275F7FD00B7C06D /* SettingViewController.swift */; };
+		BF59509A2275F81200B7C06D /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950992275F81200B7C06D /* PasswordViewController.swift */; };
+		BF5950A02275F98000B7C06D /* FZlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59509F2275F98000B7C06D /* FZlog.swift */; };
+		BF5950A22275FB1200B7C06D /* FZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A12275FB1200B7C06D /* FZNavigationController.swift */; };
+		BF5950AF2275FB5A00B7C06D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A42275FB5A00B7C06D /* UIColor+Extension.swift */; };
+		BF5950B02275FB5A00B7C06D /* Data+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A52275FB5A00B7C06D /* Data+hex.swift */; };
+		BF5950B12275FB5A00B7C06D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A62275FB5A00B7C06D /* Date+Extension.swift */; };
+		BF5950B22275FB5A00B7C06D /* UITextFiled+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A72275FB5A00B7C06D /* UITextFiled+Extenstion.swift */; };
+		BF5950B32275FB5A00B7C06D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A82275FB5A00B7C06D /* UIImage+Extension.swift */; };
+		BF5950B42275FB5A00B7C06D /* JSONObject+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A92275FB5A00B7C06D /* JSONObject+ToString.swift */; };
+		BF5950B52275FB5A00B7C06D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950AA2275FB5A00B7C06D /* String+Extension.swift */; };
+		BF5950B62275FB5A00B7C06D /* Bundle+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950AB2275FB5A00B7C06D /* Bundle+Language.swift */; };
+		BF5950BF2275FC6300B7C06D /* FZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950BC2275FC6300B7C06D /* FZColor.swift */; };
+		BF5950C02275FC6300B7C06D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950BD2275FC6300B7C06D /* Constant.swift */; };
+		BF5950C12275FC6300B7C06D /* FZUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */; };
+		BF5950C52275FFE000B7C06D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF5950C72275FFE000B7C06D /* Localizable.strings */; };
 		BF6B48D2227455390074AB15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48D1227455390074AB15 /* AppDelegate.swift */; };
-		BF6B48D4227455390074AB15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48D3227455390074AB15 /* ViewController.swift */; };
 		BF6B48D7227455390074AB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48D5227455390074AB15 /* Main.storyboard */; };
 		BF6B48D92274553A0074AB15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48D82274553A0074AB15 /* Assets.xcassets */; };
 		BF6B48DC2274553A0074AB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */; };
@@ -36,9 +53,29 @@
 
 /* Begin PBXFileReference section */
 		B776EE1523A8DD75C259F78F /* Pods-PasswordKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeper.release.xcconfig"; path = "Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper.release.xcconfig"; sourceTree = "<group>"; };
+		BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		BF5950952275F7CB00B7C06D /* AppDelegateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateController.swift; sourceTree = "<group>"; };
+		BF5950972275F7FD00B7C06D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		BF5950992275F81200B7C06D /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		BF59509F2275F98000B7C06D /* FZlog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZlog.swift; sourceTree = "<group>"; };
+		BF5950A12275FB1200B7C06D /* FZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZNavigationController.swift; sourceTree = "<group>"; };
+		BF5950A42275FB5A00B7C06D /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		BF5950A52275FB5A00B7C06D /* Data+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+hex.swift"; sourceTree = "<group>"; };
+		BF5950A62275FB5A00B7C06D /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		BF5950A72275FB5A00B7C06D /* UITextFiled+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextFiled+Extenstion.swift"; sourceTree = "<group>"; };
+		BF5950A82275FB5A00B7C06D /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		BF5950A92275FB5A00B7C06D /* JSONObject+ToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONObject+ToString.swift"; sourceTree = "<group>"; };
+		BF5950AA2275FB5A00B7C06D /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BF5950AB2275FB5A00B7C06D /* Bundle+Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Language.swift"; sourceTree = "<group>"; };
+		BF5950BC2275FC6300B7C06D /* FZColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZColor.swift; sourceTree = "<group>"; };
+		BF5950BD2275FC6300B7C06D /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZUserDefaults.swift; sourceTree = "<group>"; };
+		BF5950C62275FFE000B7C06D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF5950C8227600F500B7C06D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		BF5950C9227600F600B7C06D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BF5950CA227600F600B7C06D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		BF6B48CE227455390074AB15 /* PasswordKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B48D1227455390074AB15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF6B48D3227455390074AB15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF6B48D6227455390074AB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF6B48D82274553A0074AB15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF6B48DB2274553A0074AB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,7 +122,6 @@
 				FFB73C8EB17EAE8D660B10BA /* Pods-PasswordKeeper.debug.xcconfig */,
 				B776EE1523A8DD75C259F78F /* Pods-PasswordKeeper.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -95,6 +131,99 @@
 				F7724EAF457CBFE869751FC7 /* Pods_PasswordKeeper.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF59508E2275F5E000B7C06D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BF6B48D1227455390074AB15 /* AppDelegate.swift */,
+				BF5950952275F7CB00B7C06D /* AppDelegateController.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BF59508F2275F5FA00B7C06D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BF5950922275F71800B7C06D /* Setting */,
+				BF5950912275F6F000B7C06D /* Password */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BF5950902275F6C700B7C06D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF5950A32275FB5A00B7C06D /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BF5950912275F6F000B7C06D /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */,
+				BF5950992275F81200B7C06D /* PasswordViewController.swift */,
+				BF5950A12275FB1200B7C06D /* FZNavigationController.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		BF5950922275F71800B7C06D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BF5950972275F7FD00B7C06D /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		BF59509B2275F90900B7C06D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BF59509E2275F98000B7C06D /* Log */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BF59509E2275F98000B7C06D /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				BF59509F2275F98000B7C06D /* FZlog.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		BF5950A32275FB5A00B7C06D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF5950A42275FB5A00B7C06D /* UIColor+Extension.swift */,
+				BF5950A52275FB5A00B7C06D /* Data+hex.swift */,
+				BF5950A62275FB5A00B7C06D /* Date+Extension.swift */,
+				BF5950A72275FB5A00B7C06D /* UITextFiled+Extenstion.swift */,
+				BF5950A82275FB5A00B7C06D /* UIImage+Extension.swift */,
+				BF5950A92275FB5A00B7C06D /* JSONObject+ToString.swift */,
+				BF5950AA2275FB5A00B7C06D /* String+Extension.swift */,
+				BF5950AB2275FB5A00B7C06D /* Bundle+Language.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF5950BB2275FC3100B7C06D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BF5950BD2275FC6300B7C06D /* Constant.swift */,
+				BF5950BC2275FC6300B7C06D /* FZColor.swift */,
+				BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BF5950C22275FFA200B7C06D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF5950C72275FFE000B7C06D /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BF6B48C5227455390074AB15 = {
@@ -122,8 +251,12 @@
 		BF6B48D0227455390074AB15 /* PasswordKeeper */ = {
 			isa = PBXGroup;
 			children = (
-				BF6B48D1227455390074AB15 /* AppDelegate.swift */,
-				BF6B48D3227455390074AB15 /* ViewController.swift */,
+				BF5950C22275FFA200B7C06D /* Resources */,
+				BF5950BB2275FC3100B7C06D /* Constants */,
+				BF59509B2275F90900B7C06D /* Module */,
+				BF5950902275F6C700B7C06D /* Utils */,
+				BF59508F2275F5FA00B7C06D /* Main */,
+				BF59508E2275F5E000B7C06D /* AppDelegate */,
 				BF6B48D5227455390074AB15 /* Main.storyboard */,
 				BF6B48D82274553A0074AB15 /* Assets.xcassets */,
 				BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */,
@@ -238,6 +371,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = BF6B48C5227455390074AB15;
 			productRefGroup = BF6B48CF227455390074AB15 /* Products */;
@@ -257,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6B48DC2274553A0074AB15 /* LaunchScreen.storyboard in Resources */,
+				BF5950C52275FFE000B7C06D /* Localizable.strings in Resources */,
 				BF6B48D92274553A0074AB15 /* Assets.xcassets in Resources */,
 				BF6B48D7227455390074AB15 /* Main.storyboard in Resources */,
 			);
@@ -342,8 +477,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6B48D4227455390074AB15 /* ViewController.swift in Sources */,
+				BF5950982275F7FD00B7C06D /* SettingViewController.swift in Sources */,
+				BF5950C02275FC6300B7C06D /* Constant.swift in Sources */,
+				BF5950942275F7AA00B7C06D /* HomeTabBarViewController.swift in Sources */,
+				BF5950A02275F98000B7C06D /* FZlog.swift in Sources */,
+				BF5950B32275FB5A00B7C06D /* UIImage+Extension.swift in Sources */,
+				BF5950B02275FB5A00B7C06D /* Data+hex.swift in Sources */,
+				BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */,
+				BF5950B62275FB5A00B7C06D /* Bundle+Language.swift in Sources */,
+				BF5950C12275FC6300B7C06D /* FZUserDefaults.swift in Sources */,
+				BF5950BF2275FC6300B7C06D /* FZColor.swift in Sources */,
+				BF5950B22275FB5A00B7C06D /* UITextFiled+Extenstion.swift in Sources */,
+				BF5950B12275FB5A00B7C06D /* Date+Extension.swift in Sources */,
+				BF5950B52275FB5A00B7C06D /* String+Extension.swift in Sources */,
+				BF5950B42275FB5A00B7C06D /* JSONObject+ToString.swift in Sources */,
+				BF5950A22275FB1200B7C06D /* FZNavigationController.swift in Sources */,
 				BF6B48D2227455390074AB15 /* AppDelegate.swift in Sources */,
+				BF59509A2275F81200B7C06D /* PasswordViewController.swift in Sources */,
+				BF5950AF2275FB5A00B7C06D /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,10 +530,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BF5950C72275FFE000B7C06D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5950C62275FFE000B7C06D /* en */,
+				BF5950CA227600F600B7C06D /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BF6B48D5227455390074AB15 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BF6B48D6227455390074AB15 /* Base */,
+				BF5950C8227600F500B7C06D /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -391,6 +552,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BF6B48DB2274553A0074AB15 /* Base */,
+				BF5950C9227600F600B7C06D /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -402,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -463,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  PasswordKeeper
+
+  Created by wangjh on 2019/4/28.
+  Copyright © 2019 jax. All rights reserved.
+*/
+
+"password" = "密码";
+"setting" = "设置";
