@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A9AB147393E9407027E008 /* Pods_PasswordKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7724EAF457CBFE869751FC7 /* Pods_PasswordKeeper.framework */; };
 		BF6B48D2227455390074AB15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48D1227455390074AB15 /* AppDelegate.swift */; };
 		BF6B48D4227455390074AB15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48D3227455390074AB15 /* ViewController.swift */; };
 		BF6B48D7227455390074AB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48D5227455390074AB15 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B776EE1523A8DD75C259F78F /* Pods-PasswordKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeper.release.xcconfig"; path = "Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		BF6B48CE227455390074AB15 /* PasswordKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B48D1227455390074AB15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6B48D3227455390074AB15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		BF6B48ED2274553A0074AB15 /* PasswordKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeeperUITests.swift; sourceTree = "<group>"; };
 		BF6B48F32274553A0074AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7724EAF457CBFE869751FC7 /* Pods_PasswordKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB73C8EB17EAE8D660B10BA /* Pods-PasswordKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeper.debug.xcconfig"; path = "Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A9AB147393E9407027E008 /* Pods_PasswordKeeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553AD504772F285843551890 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFB73C8EB17EAE8D660B10BA /* Pods-PasswordKeeper.debug.xcconfig */,
+				B776EE1523A8DD75C259F78F /* Pods-PasswordKeeper.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5DC937466E32E9E82A78E71C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7724EAF457CBFE869751FC7 /* Pods_PasswordKeeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF6B48C5227455390074AB15 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,8 @@
 				BF6B48E52274553A0074AB15 /* PasswordKeeperTests */,
 				BF6B48F02274553A0074AB15 /* PasswordKeeperUITests */,
 				BF6B48CF227455390074AB15 /* Products */,
+				553AD504772F285843551890 /* Pods */,
+				5DC937466E32E9E82A78E71C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF6B48F62274553A0074AB15 /* Build configuration list for PBXNativeTarget "PasswordKeeper" */;
 			buildPhases = (
+				63172B0E364F049F5EBF002C /* [CP] Check Pods Manifest.lock */,
 				BF6B48CA227455390074AB15 /* Sources */,
 				BF6B48CB227455390074AB15 /* Frameworks */,
 				BF6B48CC227455390074AB15 /* Resources */,
+				B9C6772A8CA43C696B433B28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63172B0E364F049F5EBF002C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PasswordKeeper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C6772A8CA43C696B433B28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF6B48CA227455390074AB15 /* Sources */ = {
@@ -430,11 +516,13 @@
 		};
 		BF6B48F72274553A0074AB15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB73C8EB17EAE8D660B10BA /* Pods-PasswordKeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2URYBYKY6;
 				INFOPLIST_FILE = PasswordKeeper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,17 +530,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jax.me.PasswordKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BF6B48F82274553A0074AB15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B776EE1523A8DD75C259F78F /* Pods-PasswordKeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2URYBYKY6;
 				INFOPLIST_FILE = PasswordKeeper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +550,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jax.me.PasswordKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
