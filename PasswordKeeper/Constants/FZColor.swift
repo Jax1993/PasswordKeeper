@@ -17,6 +17,10 @@ class FZColor {
     static var themeRedColor: UIColor {
         return UIColor(hex: "#E57373")
     }
+    
+    static var themeBlackColor: UIColor {
+        return UIColor(hex: "#363636")
+    }
 
     static var whiteColor250: UIColor {
         return UIColor(red: 250/255.0, green: 250/255.0, blue: 250/255.0, alpha: 1)

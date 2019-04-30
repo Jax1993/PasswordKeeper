@@ -6,5 +6,16 @@
   Copyright © 2019 jax. All rights reserved.
 */
 
-"password" = "Password";
-"setting" = "Setting";
+"password" = "密码";
+"setting" = "设置";
+"add_password" = "添加密码";
+"cancel" = "取消";
+"done" = "完成";
+"domain" = "网站";
+"username" = "用户名";
+"password" = "密码";
+"note" = "备注";
+"domain_placehplder" = "请输入网站";
+"username_placehplder" = "请输入用户名";
+"password_placehplder" = "请输入密码";
+"note_placehplder" = "其他信息";

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14A9AB147393E9407027E008 /* Pods_PasswordKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7724EAF457CBFE869751FC7 /* Pods_PasswordKeeper.framework */; };
+		BF37EE9E22789D4400150AEE /* PasswordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37EE9D22789D4400150AEE /* PasswordDetailViewController.swift */; };
 		BF5950942275F7AA00B7C06D /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */; };
 		BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950952275F7CB00B7C06D /* AppDelegateController.swift */; };
 		BF5950982275F7FD00B7C06D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950972275F7FD00B7C06D /* SettingViewController.swift */; };
@@ -32,6 +33,11 @@
 		BF6B48DC2274553A0074AB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */; };
 		BF6B48E72274553A0074AB15 /* PasswordKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48E62274553A0074AB15 /* PasswordKeeperTests.swift */; };
 		BF6B48F22274553A0074AB15 /* PasswordKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */; };
+		BFCCE61022787084006B023A /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCE60F22787084006B023A /* Password.swift */; };
+		BFCCE6132278710B006B023A /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCE6122278710B006B023A /* PasswordCell.swift */; };
+		BFCCE61522787559006B023A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCE61422787559006B023A /* AddViewController.swift */; };
+		BFCCE61722787606006B023A /* AddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCE61622787606006B023A /* AddCell.swift */; };
+		BFD964D222788AB600788994 /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD964D122788AB600788994 /* AddNoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		B776EE1523A8DD75C259F78F /* Pods-PasswordKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeper.release.xcconfig"; path = "Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper.release.xcconfig"; sourceTree = "<group>"; };
+		BF37EE9D22789D4400150AEE /* PasswordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDetailViewController.swift; sourceTree = "<group>"; };
 		BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		BF5950952275F7CB00B7C06D /* AppDelegateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateController.swift; sourceTree = "<group>"; };
 		BF5950972275F7FD00B7C06D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +93,11 @@
 		BF6B48ED2274553A0074AB15 /* PasswordKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeeperUITests.swift; sourceTree = "<group>"; };
 		BF6B48F32274553A0074AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCCE60F22787084006B023A /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		BFCCE6122278710B006B023A /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
+		BFCCE61422787559006B023A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		BFCCE61622787606006B023A /* AddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCell.swift; sourceTree = "<group>"; };
+		BFD964D122788AB600788994 /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
 		F7724EAF457CBFE869751FC7 /* Pods_PasswordKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB73C8EB17EAE8D660B10BA /* Pods-PasswordKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeper.debug.xcconfig"; path = "Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +157,8 @@
 		BF59508F2275F5FA00B7C06D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BFCCE611227870E2006B023A /* Cell */,
+				BFCCE60E2278706A006B023A /* Model */,
 				BF5950922275F71800B7C06D /* Setting */,
 				BF5950912275F6F000B7C06D /* Password */,
 			);
@@ -162,9 +176,11 @@
 		BF5950912275F6F000B7C06D /* Password */ = {
 			isa = PBXGroup;
 			children = (
+				BF5950A12275FB1200B7C06D /* FZNavigationController.swift */,
 				BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */,
 				BF5950992275F81200B7C06D /* PasswordViewController.swift */,
-				BF5950A12275FB1200B7C06D /* FZNavigationController.swift */,
+				BFCCE61422787559006B023A /* AddViewController.swift */,
+				BF37EE9D22789D4400150AEE /* PasswordDetailViewController.swift */,
 			);
 			path = Password;
 			sourceTree = "<group>";
@@ -281,6 +297,24 @@
 				BF6B48F32274553A0074AB15 /* Info.plist */,
 			);
 			path = PasswordKeeperUITests;
+			sourceTree = "<group>";
+		};
+		BFCCE60E2278706A006B023A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFCCE60F22787084006B023A /* Password.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFCCE611227870E2006B023A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BFCCE6122278710B006B023A /* PasswordCell.swift */,
+				BFCCE61622787606006B023A /* AddCell.swift */,
+				BFD964D122788AB600788994 /* AddNoteCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,13 +511,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD964D222788AB600788994 /* AddNoteCell.swift in Sources */,
 				BF5950982275F7FD00B7C06D /* SettingViewController.swift in Sources */,
+				BF37EE9E22789D4400150AEE /* PasswordDetailViewController.swift in Sources */,
 				BF5950C02275FC6300B7C06D /* Constant.swift in Sources */,
+				BFCCE61522787559006B023A /* AddViewController.swift in Sources */,
 				BF5950942275F7AA00B7C06D /* HomeTabBarViewController.swift in Sources */,
 				BF5950A02275F98000B7C06D /* FZlog.swift in Sources */,
+				BFCCE6132278710B006B023A /* PasswordCell.swift in Sources */,
 				BF5950B32275FB5A00B7C06D /* UIImage+Extension.swift in Sources */,
 				BF5950B02275FB5A00B7C06D /* Data+hex.swift in Sources */,
 				BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */,
+				BFCCE61722787606006B023A /* AddCell.swift in Sources */,
+				BFCCE61022787084006B023A /* Password.swift in Sources */,
 				BF5950B62275FB5A00B7C06D /* Bundle+Language.swift in Sources */,
 				BF5950C12275FC6300B7C06D /* FZUserDefaults.swift in Sources */,
 				BF5950BF2275FC6300B7C06D /* FZColor.swift in Sources */,
