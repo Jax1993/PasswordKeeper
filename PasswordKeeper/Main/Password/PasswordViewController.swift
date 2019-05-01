@@ -13,11 +13,6 @@ class PasswordViewController: UITableViewController {
     var passwords: [Password] = []
     
     init() {
-        let p0 = Password(domain: "github.com", username: "wangjh", password: "123123", note: "")
-        let p1 = Password(domain: "google.com", username: "wangjh", password: "123123", note: "")
-        let p2 = Password(domain: "bilibili.com", username: "wangjh", password: "123123", note: "")
-        let p3 = Password(domain: "twitter.com", username: "wangjh", password: "123123", note: "")
-        passwords.append(contentsOf: [p0,p1,p2,p3])
         super.init(style: .grouped)
     }
     
@@ -28,8 +23,13 @@ class PasswordViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadData()
         tableView.register(PasswordCell.self, forCellReuseIdentifier: NSStringFromClass(PasswordCell.self))
         setupItems()
+    }
+    
+    func loadData() -> Void {
+        passwords = PasswordDB.shared.listAll()
     }
     
     private func setupItems() -> Void {
@@ -51,12 +51,12 @@ extension PasswordViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(PasswordCell.self)) as! PasswordCell
         let password = passwords[indexPath.section]
-        cell.reload(img: "github", text: password.domain)
+        cell.reload(password: password)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 48
+        return 80
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -9,6 +9,7 @@ def pods
     pod 'Kingfisher', '5.4.0'
     pod 'SnapKit', '5.0.0'
     pod 'CryptoSwift', '1.0.0'
+    pod 'PKHUD', '5.2.1'
 end
 
 target 'PasswordKeeper' do

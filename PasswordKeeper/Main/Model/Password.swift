@@ -8,9 +8,11 @@
 
 import UIKit
 
-struct Password {
-    let domain: String
-    let username: String
-    let password: String
-    let note: String
+struct Password: Codable {
+    let id: Int?
+    let name: String
+    let domain: String?
+    let username: String?
+    let password: String?
+    let note: String?
 }

@@ -33,6 +33,9 @@
 		BF6B48DC2274553A0074AB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */; };
 		BF6B48E72274553A0074AB15 /* PasswordKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48E62274553A0074AB15 /* PasswordKeeperTests.swift */; };
 		BF6B48F22274553A0074AB15 /* PasswordKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */; };
+		BFAED8AC22792EEC0065F220 /* PasswordDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAED8AB22792EEC0065F220 /* PasswordDB.swift */; };
+		BFAED8AE2279393B0065F220 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAED8AD2279393B0065F220 /* CryptoUtils.swift */; };
+		BFAED8B1227941000065F220 /* FZHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAED8B0227941000065F220 /* FZHUD.swift */; };
 		BFCCE61022787084006B023A /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCE60F22787084006B023A /* Password.swift */; };
 		BFCCE6132278710B006B023A /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCE6122278710B006B023A /* PasswordCell.swift */; };
 		BFCCE61522787559006B023A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCE61422787559006B023A /* AddViewController.swift */; };
@@ -93,6 +96,9 @@
 		BF6B48ED2274553A0074AB15 /* PasswordKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeeperUITests.swift; sourceTree = "<group>"; };
 		BF6B48F32274553A0074AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFAED8AB22792EEC0065F220 /* PasswordDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDB.swift; sourceTree = "<group>"; };
+		BFAED8AD2279393B0065F220 /* CryptoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
+		BFAED8B0227941000065F220 /* FZHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHUD.swift; sourceTree = "<group>"; };
 		BFCCE60F22787084006B023A /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		BFCCE6122278710B006B023A /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
 		BFCCE61422787559006B023A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +202,7 @@
 		BF59509B2275F90900B7C06D /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				BFAED8AF227940F00065F220 /* HUD */,
 				BF59509E2275F98000B7C06D /* Log */,
 			);
 			path = Module;
@@ -267,6 +274,7 @@
 		BF6B48D0227455390074AB15 /* PasswordKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				BFAED8AA22792E680065F220 /* DataCenter */,
 				BF5950C22275FFA200B7C06D /* Resources */,
 				BF5950BB2275FC3100B7C06D /* Constants */,
 				BF59509B2275F90900B7C06D /* Module */,
@@ -297,6 +305,23 @@
 				BF6B48F32274553A0074AB15 /* Info.plist */,
 			);
 			path = PasswordKeeperUITests;
+			sourceTree = "<group>";
+		};
+		BFAED8AA22792E680065F220 /* DataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				BFAED8AB22792EEC0065F220 /* PasswordDB.swift */,
+				BFAED8AD2279393B0065F220 /* CryptoUtils.swift */,
+			);
+			path = DataCenter;
+			sourceTree = "<group>";
+		};
+		BFAED8AF227940F00065F220 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				BFAED8B0227941000065F220 /* FZHUD.swift */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		BFCCE60E2278706A006B023A /* Model */ = {
@@ -483,6 +508,7 @@
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
@@ -495,6 +521,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
@@ -512,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD964D222788AB600788994 /* AddNoteCell.swift in Sources */,
+				BFAED8B1227941000065F220 /* FZHUD.swift in Sources */,
 				BF5950982275F7FD00B7C06D /* SettingViewController.swift in Sources */,
 				BF37EE9E22789D4400150AEE /* PasswordDetailViewController.swift in Sources */,
 				BF5950C02275FC6300B7C06D /* Constant.swift in Sources */,
@@ -519,6 +547,7 @@
 				BF5950942275F7AA00B7C06D /* HomeTabBarViewController.swift in Sources */,
 				BF5950A02275F98000B7C06D /* FZlog.swift in Sources */,
 				BFCCE6132278710B006B023A /* PasswordCell.swift in Sources */,
+				BFAED8AE2279393B0065F220 /* CryptoUtils.swift in Sources */,
 				BF5950B32275FB5A00B7C06D /* UIImage+Extension.swift in Sources */,
 				BF5950B02275FB5A00B7C06D /* Data+hex.swift in Sources */,
 				BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */,
@@ -530,6 +559,7 @@
 				BF5950B22275FB5A00B7C06D /* UITextFiled+Extenstion.swift in Sources */,
 				BF5950B12275FB5A00B7C06D /* Date+Extension.swift in Sources */,
 				BF5950B52275FB5A00B7C06D /* String+Extension.swift in Sources */,
+				BFAED8AC22792EEC0065F220 /* PasswordDB.swift in Sources */,
 				BF5950B42275FB5A00B7C06D /* JSONObject+ToString.swift in Sources */,
 				BF5950A22275FB1200B7C06D /* FZNavigationController.swift in Sources */,
 				BF6B48D2227455390074AB15 /* AppDelegate.swift in Sources */,

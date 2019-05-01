@@ -15,9 +15,15 @@ class PasswordCell: UITableViewCell {
         return img
     }()
     
-    lazy var textLab: UILabel = {
+    lazy var titleLab: UILabel = {
         let lab = UILabel()
         lab.font = UIFont.systemFont(ofSize: 17)
+        return lab
+    }()
+    
+    lazy var textLab: UILabel = {
+        let lab = UILabel()
+        lab.font = UIFont.systemFont(ofSize: 15)
         return lab
     }()
     
@@ -25,6 +31,7 @@ class PasswordCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         contentView.addSubview(imgView)
+        contentView.addSubview(titleLab)
         contentView.addSubview(textLab)
         setupConstraints()
     }
@@ -39,15 +46,19 @@ class PasswordCell: UITableViewCell {
             make.centerY.equalToSuperview()
             make.size.equalTo(CGSize(width: 36, height: 36))
         }
-        textLab.snp.makeConstraints { (make) in
+        titleLab.snp.makeConstraints { (make) in
             make.left.equalTo(imgView.snp.right).offset(20)
-            make.centerY.equalToSuperview()
-            make.right.equalToSuperview().offset(-40)
+            make.top.equalToSuperview().offset(10)
+        }
+        textLab.snp.makeConstraints { (make) in
+            make.left.equalTo(titleLab)
+            make.top.equalTo(titleLab.snp.bottom).offset(8)
         }
     }
     
-    func reload(img: String, text: String) -> Void {
-        imgView.image = UIImage(named: img)
-        textLab.text = text
+    func reload(password: Password) -> Void {
+        imgView.image = UIImage(named: "github")
+        titleLab.text = password.name
+        textLab.text = password.domain
     }
 }

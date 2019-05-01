@@ -10,19 +10,22 @@ import UIKit
 
 class AddViewController: UITableViewController {
     
+    var name: String?
     var domain: String?
     var username: String?
     var password: String?
     var note: String?
     
-    let titles = [NSLocalizedString("domain", comment: ""),
+    let titles = [NSLocalizedString("name", comment: ""),
+                  NSLocalizedString("domain", comment: ""),
                   NSLocalizedString("username", comment: ""),
                   NSLocalizedString("password", comment: ""),
                   NSLocalizedString("note", comment: "")]
-    let placeholders = [NSLocalizedString("domain_placehplder", comment: ""),
-                  NSLocalizedString("username_placehplder", comment: ""),
-                  NSLocalizedString("password_placehplder", comment: ""),
-                  NSLocalizedString("note_placehplder", comment: "")]
+    let placeholders = [NSLocalizedString("name_placehplder", comment: ""),
+                        NSLocalizedString("domain_placehplder", comment: ""),
+                        NSLocalizedString("username_placehplder", comment: ""),
+                        NSLocalizedString("password_placehplder", comment: ""),
+                        NSLocalizedString("note_placehplder", comment: "")]
 
     init() {
         super.init(style: .grouped)
@@ -66,13 +69,22 @@ extension AddViewController {
         let placeholder = placeholders[indexPath.section]
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(AddCell.self)) as! AddCell
+            cell.reload(title: title, text: name, placeholder: placeholder)
+            cell.textChangedClosure = {[weak self] (text) in
+                self?.name = text
+                self?.navigationItem.rightBarButtonItem?.isEnabled = text.count > 0
+            }
+            return cell
+        }
+        if indexPath.section == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(AddCell.self)) as! AddCell
             cell.reload(title: title, text: domain, placeholder: placeholder)
             cell.textChangedClosure = {[weak self] (text) in
                 self?.domain = text
             }
             return cell
         }
-        else if indexPath.section == 1 {
+        else if indexPath.section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(AddCell.self)) as! AddCell
             cell.reload(title: title, text: username, placeholder: placeholder)
             cell.textChangedClosure = {[weak self] (text) in
@@ -80,7 +92,7 @@ extension AddViewController {
             }
             return cell
         }
-        else if indexPath.section == 2 {
+        else if indexPath.section == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(AddCell.self)) as! AddCell
             cell.reload(title: title, text: password, placeholder: placeholder)
             cell.textChangedClosure = {[weak self] (text) in
@@ -97,7 +109,7 @@ extension AddViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 3 {
+        if indexPath.section == 4 {
             return 120
         }
         return 48
@@ -112,7 +124,23 @@ extension AddViewController {
 
 extension AddViewController {
     @objc func didTapDone() -> Void {
+        view.endEditing(true)
         
+        let n = name ?? ""
+        if n.isEmpty {
+            FZHUD.flash(msg: NSLocalizedString("name_empty", comment: ""))
+            return
+        }
+        if PasswordDB.shared.exist(name: n) {
+            FZHUD.flash(msg: NSLocalizedString("name_exist", comment: ""))
+            return
+        }
+        let entry = Password(id: nil, name: n, domain: domain, username: username, password: password, note: note)
+        if PasswordDB.shared.insert(entry: entry) < 0 {
+            FZHUD.flash(msg: NSLocalizedString("update_fail", comment: ""))
+            return
+        }
+        FZHUD.flash(msg: NSLocalizedString("update_succeed", comment: ""))
     }
     
     @objc func didTapCancel() -> Void {
