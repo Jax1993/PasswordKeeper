@@ -16,6 +16,10 @@ target 'PasswordKeeper' do
     pods
 end
 
+target 'PasswordKeeperTests' do
+  pods
+end
+
 
 
 

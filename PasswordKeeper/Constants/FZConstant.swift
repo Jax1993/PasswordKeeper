@@ -1,5 +1,5 @@
 //
-//  CryptoUtils.swift
+//  FZConstant.swift
 //  PasswordKeeper
 //
 //  Created by wangjh on 2019/5/1.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class CryptoUtils: NSObject {
-
+struct FZConstant {
+    static let DEVICE_LOCK_TIME = 180.0
 }

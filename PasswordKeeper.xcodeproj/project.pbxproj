@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14A9AB147393E9407027E008 /* Pods_PasswordKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7724EAF457CBFE869751FC7 /* Pods_PasswordKeeper.framework */; };
+		6B04C30F60897BCB298CFC23 /* Pods_PasswordKeeperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E8BC4DBF6F1BB918715E4C /* Pods_PasswordKeeperTests.framework */; };
 		BF37EE9E22789D4400150AEE /* PasswordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37EE9D22789D4400150AEE /* PasswordDetailViewController.swift */; };
 		BF5950942275F7AA00B7C06D /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */; };
 		BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950952275F7CB00B7C06D /* AppDelegateController.swift */; };
@@ -16,7 +17,6 @@
 		BF5950A02275F98000B7C06D /* FZlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59509F2275F98000B7C06D /* FZlog.swift */; };
 		BF5950A22275FB1200B7C06D /* FZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A12275FB1200B7C06D /* FZNavigationController.swift */; };
 		BF5950AF2275FB5A00B7C06D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A42275FB5A00B7C06D /* UIColor+Extension.swift */; };
-		BF5950B02275FB5A00B7C06D /* Data+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A52275FB5A00B7C06D /* Data+hex.swift */; };
 		BF5950B12275FB5A00B7C06D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A62275FB5A00B7C06D /* Date+Extension.swift */; };
 		BF5950B22275FB5A00B7C06D /* UITextFiled+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A72275FB5A00B7C06D /* UITextFiled+Extenstion.swift */; };
 		BF5950B32275FB5A00B7C06D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950A82275FB5A00B7C06D /* UIImage+Extension.swift */; };
@@ -24,7 +24,6 @@
 		BF5950B52275FB5A00B7C06D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950AA2275FB5A00B7C06D /* String+Extension.swift */; };
 		BF5950B62275FB5A00B7C06D /* Bundle+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950AB2275FB5A00B7C06D /* Bundle+Language.swift */; };
 		BF5950BF2275FC6300B7C06D /* FZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950BC2275FC6300B7C06D /* FZColor.swift */; };
-		BF5950C02275FC6300B7C06D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950BD2275FC6300B7C06D /* Constant.swift */; };
 		BF5950C12275FC6300B7C06D /* FZUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */; };
 		BF5950C52275FFE000B7C06D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF5950C72275FFE000B7C06D /* Localizable.strings */; };
 		BF6B48D2227455390074AB15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48D1227455390074AB15 /* AppDelegate.swift */; };
@@ -33,8 +32,12 @@
 		BF6B48DC2274553A0074AB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */; };
 		BF6B48E72274553A0074AB15 /* PasswordKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48E62274553A0074AB15 /* PasswordKeeperTests.swift */; };
 		BF6B48F22274553A0074AB15 /* PasswordKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */; };
+		BFAA3DEC2279B11A0034E5BF /* FZFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DEB2279B11A0034E5BF /* FZFileManager.swift */; };
+		BFAA3DEE2279B1CC0034E5BF /* FZPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DED2279B1CC0034E5BF /* FZPath.swift */; };
+		BFAA3DF02279B1F20034E5BF /* FZNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DEF2279B1F20034E5BF /* FZNotification.swift */; };
+		BFAA3DF22279B23A0034E5BF /* FZConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DF12279B23A0034E5BF /* FZConstant.swift */; };
 		BFAED8AC22792EEC0065F220 /* PasswordDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAED8AB22792EEC0065F220 /* PasswordDB.swift */; };
-		BFAED8AE2279393B0065F220 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAED8AD2279393B0065F220 /* CryptoUtils.swift */; };
+		BFAED8AE2279393B0065F220 /* FZCryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAED8AD2279393B0065F220 /* FZCryptoUtils.swift */; };
 		BFAED8B1227941000065F220 /* FZHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAED8B0227941000065F220 /* FZHUD.swift */; };
 		BFCCE61022787084006B023A /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCE60F22787084006B023A /* Password.swift */; };
 		BFCCE6132278710B006B023A /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCE6122278710B006B023A /* PasswordCell.swift */; };
@@ -61,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29E8BC4DBF6F1BB918715E4C /* Pods_PasswordKeeperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordKeeperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9137A886F4FAB1F3F43ED322 /* Pods-PasswordKeeperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeperTests.release.xcconfig"; path = "Target Support Files/Pods-PasswordKeeperTests/Pods-PasswordKeeperTests.release.xcconfig"; sourceTree = "<group>"; };
+		AECEACB8E135631A1E8A00D3 /* Pods-PasswordKeeperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeperTests.debug.xcconfig"; path = "Target Support Files/Pods-PasswordKeeperTests/Pods-PasswordKeeperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B776EE1523A8DD75C259F78F /* Pods-PasswordKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeper.release.xcconfig"; path = "Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		BF37EE9D22789D4400150AEE /* PasswordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDetailViewController.swift; sourceTree = "<group>"; };
 		BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +76,6 @@
 		BF59509F2275F98000B7C06D /* FZlog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZlog.swift; sourceTree = "<group>"; };
 		BF5950A12275FB1200B7C06D /* FZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZNavigationController.swift; sourceTree = "<group>"; };
 		BF5950A42275FB5A00B7C06D /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		BF5950A52275FB5A00B7C06D /* Data+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+hex.swift"; sourceTree = "<group>"; };
 		BF5950A62275FB5A00B7C06D /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		BF5950A72275FB5A00B7C06D /* UITextFiled+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextFiled+Extenstion.swift"; sourceTree = "<group>"; };
 		BF5950A82275FB5A00B7C06D /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -78,7 +83,6 @@
 		BF5950AA2275FB5A00B7C06D /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BF5950AB2275FB5A00B7C06D /* Bundle+Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Language.swift"; sourceTree = "<group>"; };
 		BF5950BC2275FC6300B7C06D /* FZColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZColor.swift; sourceTree = "<group>"; };
-		BF5950BD2275FC6300B7C06D /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZUserDefaults.swift; sourceTree = "<group>"; };
 		BF5950C62275FFE000B7C06D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BF5950C8227600F500B7C06D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -96,8 +100,12 @@
 		BF6B48ED2274553A0074AB15 /* PasswordKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeeperUITests.swift; sourceTree = "<group>"; };
 		BF6B48F32274553A0074AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFAA3DEB2279B11A0034E5BF /* FZFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZFileManager.swift; sourceTree = "<group>"; };
+		BFAA3DED2279B1CC0034E5BF /* FZPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZPath.swift; sourceTree = "<group>"; };
+		BFAA3DEF2279B1F20034E5BF /* FZNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZNotification.swift; sourceTree = "<group>"; };
+		BFAA3DF12279B23A0034E5BF /* FZConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZConstant.swift; sourceTree = "<group>"; };
 		BFAED8AB22792EEC0065F220 /* PasswordDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDB.swift; sourceTree = "<group>"; };
-		BFAED8AD2279393B0065F220 /* CryptoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
+		BFAED8AD2279393B0065F220 /* FZCryptoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCryptoUtils.swift; sourceTree = "<group>"; };
 		BFAED8B0227941000065F220 /* FZHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHUD.swift; sourceTree = "<group>"; };
 		BFCCE60F22787084006B023A /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		BFCCE6122278710B006B023A /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B04C30F60897BCB298CFC23 /* Pods_PasswordKeeperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +148,8 @@
 			children = (
 				FFB73C8EB17EAE8D660B10BA /* Pods-PasswordKeeper.debug.xcconfig */,
 				B776EE1523A8DD75C259F78F /* Pods-PasswordKeeper.release.xcconfig */,
+				AECEACB8E135631A1E8A00D3 /* Pods-PasswordKeeperTests.debug.xcconfig */,
+				9137A886F4FAB1F3F43ED322 /* Pods-PasswordKeeperTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -147,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F7724EAF457CBFE869751FC7 /* Pods_PasswordKeeper.framework */,
+				29E8BC4DBF6F1BB918715E4C /* Pods_PasswordKeeperTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				BF5950A42275FB5A00B7C06D /* UIColor+Extension.swift */,
-				BF5950A52275FB5A00B7C06D /* Data+hex.swift */,
 				BF5950A62275FB5A00B7C06D /* Date+Extension.swift */,
 				BF5950A72275FB5A00B7C06D /* UITextFiled+Extenstion.swift */,
 				BF5950A82275FB5A00B7C06D /* UIImage+Extension.swift */,
@@ -234,9 +245,10 @@
 		BF5950BB2275FC3100B7C06D /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				BF5950BD2275FC6300B7C06D /* Constant.swift */,
 				BF5950BC2275FC6300B7C06D /* FZColor.swift */,
-				BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */,
+				BFAA3DED2279B1CC0034E5BF /* FZPath.swift */,
+				BFAA3DEF2279B1F20034E5BF /* FZNotification.swift */,
+				BFAA3DF12279B23A0034E5BF /* FZConstant.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -310,8 +322,10 @@
 		BFAED8AA22792E680065F220 /* DataCenter */ = {
 			isa = PBXGroup;
 			children = (
+				BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */,
 				BFAED8AB22792EEC0065F220 /* PasswordDB.swift */,
-				BFAED8AD2279393B0065F220 /* CryptoUtils.swift */,
+				BFAED8AD2279393B0065F220 /* FZCryptoUtils.swift */,
+				BFAA3DEB2279B11A0034E5BF /* FZFileManager.swift */,
 			);
 			path = DataCenter;
 			sourceTree = "<group>";
@@ -368,9 +382,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF6B48F92274553A0074AB15 /* Build configuration list for PBXNativeTarget "PasswordKeeperTests" */;
 			buildPhases = (
+				8A1D2BC2A88B4558CFC831C9 /* [CP] Check Pods Manifest.lock */,
 				BF6B48DE2274553A0074AB15 /* Sources */,
 				BF6B48DF2274553A0074AB15 /* Frameworks */,
 				BF6B48E02274553A0074AB15 /* Resources */,
+				974BFCFF8DD79158D12EF312 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -495,6 +511,64 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8A1D2BC2A88B4558CFC831C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PasswordKeeperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		974BFCFF8DD79158D12EF312 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordKeeperTests/Pods-PasswordKeeperTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PasswordKeeperTests/Pods-PasswordKeeperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B9C6772A8CA43C696B433B28 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,15 +616,17 @@
 				BFAED8B1227941000065F220 /* FZHUD.swift in Sources */,
 				BF5950982275F7FD00B7C06D /* SettingViewController.swift in Sources */,
 				BF37EE9E22789D4400150AEE /* PasswordDetailViewController.swift in Sources */,
-				BF5950C02275FC6300B7C06D /* Constant.swift in Sources */,
 				BFCCE61522787559006B023A /* AddViewController.swift in Sources */,
+				BFAA3DF22279B23A0034E5BF /* FZConstant.swift in Sources */,
+				BFAA3DEE2279B1CC0034E5BF /* FZPath.swift in Sources */,
 				BF5950942275F7AA00B7C06D /* HomeTabBarViewController.swift in Sources */,
 				BF5950A02275F98000B7C06D /* FZlog.swift in Sources */,
 				BFCCE6132278710B006B023A /* PasswordCell.swift in Sources */,
-				BFAED8AE2279393B0065F220 /* CryptoUtils.swift in Sources */,
+				BFAA3DF02279B1F20034E5BF /* FZNotification.swift in Sources */,
+				BFAED8AE2279393B0065F220 /* FZCryptoUtils.swift in Sources */,
 				BF5950B32275FB5A00B7C06D /* UIImage+Extension.swift in Sources */,
-				BF5950B02275FB5A00B7C06D /* Data+hex.swift in Sources */,
 				BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */,
+				BFAA3DEC2279B11A0034E5BF /* FZFileManager.swift in Sources */,
 				BFCCE61722787606006B023A /* AddCell.swift in Sources */,
 				BFCCE61022787084006B023A /* Password.swift in Sources */,
 				BF5950B62275FB5A00B7C06D /* Bundle+Language.swift in Sources */,
@@ -790,6 +866,7 @@
 		};
 		BF6B48FA2274553A0074AB15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECEACB8E135631A1E8A00D3 /* Pods-PasswordKeeperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -811,6 +888,7 @@
 		};
 		BF6B48FB2274553A0074AB15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9137A886F4FAB1F3F43ED322 /* Pods-PasswordKeeperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -16,3 +16,18 @@ struct Password: Codable {
     let password: String?
     let note: String?
 }
+
+extension Password {
+    func encrypt(key: Data) -> Password {
+        var passwordEncypted = ""
+        if let p = self.password {
+            passwordEncypted = FZCryptoUtils.encrypt(input: p, key: key)
+        }
+        var noteEncypted = ""
+        if let n = self.note {
+            noteEncypted = FZCryptoUtils.encrypt(input: n, key: key)
+        }
+        let entry = Password(id: self.id, name: self.name, domain: self.domain, username: self.username, password: passwordEncypted, note: noteEncypted)
+        return entry
+    }
+}

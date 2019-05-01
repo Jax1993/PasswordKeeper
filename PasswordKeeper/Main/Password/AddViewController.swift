@@ -136,7 +136,8 @@ extension AddViewController {
             return
         }
         let entry = Password(id: nil, name: n, domain: domain, username: username, password: password, note: note)
-        if PasswordDB.shared.insert(entry: entry) < 0 {
+        let entryEncrypted = entry.encrypt(key: FZFileManager.readUserPassword())
+        if PasswordDB.shared.insert(entry: entryEncrypted) < 0 {
             FZHUD.flash(msg: NSLocalizedString("update_fail", comment: ""))
             return
         }

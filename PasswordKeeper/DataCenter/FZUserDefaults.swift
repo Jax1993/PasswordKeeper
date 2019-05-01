@@ -9,10 +9,8 @@
 import UIKit
 
 enum FZDefaultsKey: String {
-    case language = "fz_defaults_key_language"
-    case currency = "fz_defaults_key_currency"
-    case isTurnOnFingureprint = "fz_defaults_key_fingureprint"
-    case lastLeaveTime = "fz_defaults_key_last_leave_time"
+    case language = "fz_key_language"
+    case password = "fz_key_password"
 }
 
 class FZUserDefaults {

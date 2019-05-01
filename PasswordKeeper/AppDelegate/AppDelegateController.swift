@@ -13,8 +13,10 @@ class AppDelegateController {
     let window = UIWindow()
     
     func appDidFinishLaunching() -> Void {
-        setupViewControllers()
         setupLog()
+        setupLanguage()
+        setupViewControllers()
+        FZFileManager.saveUserPassword(data: FZCryptoUtils.encryptUserPassword(password: "qwerqwer"))
     }
 }
 
@@ -27,6 +29,22 @@ extension AppDelegateController {
     }
     
     func setupLog() -> Void {
-        FZlog.setupLog()
+        FZlog.setupLog(path: FZPath.logFilePath())
+    }
+    
+    func setupLanguage() -> Void {
+        Bundle.main.onLanguage()
+        let language = FZUserDefaults.valueForKey(key: .language)
+        if language.isEmpty {
+            guard let localeLanguageCode = Locale.current.languageCode else {
+                FZUserDefaults.saveValue(value: FZLanguage.english.rawValue, key: .language)
+                return
+            }
+            if (localeLanguageCode.contains("zh")) {
+                FZUserDefaults.saveValue(value: FZLanguage.chinese.rawValue, key: .language)
+            } else {
+                FZUserDefaults.saveValue(value: FZLanguage.english.rawValue, key: .language)
+            }
+        }
     }
 }

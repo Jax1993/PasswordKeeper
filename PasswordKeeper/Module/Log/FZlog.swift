@@ -11,11 +11,6 @@ import XCGLogger
 
 class FZlog {
     
-    public class func defaultLogPath() -> String {
-        let defaultLogPath = NSHomeDirectory() + "/Documents/logFile.log"
-        return defaultLogPath
-    }
-    
     public class func debug(_ closure: @autoclosure () -> Any?, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line, userInfo: [String: Any] = [:]) {
         XCGLogger.default.logln(.debug, functionName: functionName, fileName: fileName, lineNumber: lineNumber, userInfo: userInfo, closure: closure)
     }
@@ -36,9 +31,9 @@ class FZlog {
         XCGLogger.logln(.severe, functionName: functionName, fileName: fileName, lineNumber: lineNumber, userInfo: userInfo, closure: closure)
     }
 
-    public class func setupLog() -> Void {
+    public class func setupLog(path: String) -> Void {
         let log = XCGLogger.default
-        log.setup(level: .debug, showLogIdentifier: false, showFunctionName: true, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, showDate: true, writeToFile: defaultLogPath(), fileLevel: .info)
+        log.setup(level: .debug, showLogIdentifier: false, showFunctionName: true, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, showDate: true, writeToFile: path, fileLevel: .info)
     }
 
 }
