@@ -45,8 +45,8 @@ class PasswordKeeperTests: XCTestCase {
     func testFileData() -> Void {
         let password = "user_password"
         let keyData = FZCryptoUtils.encryptUserPassword(password: password)
-        FZFileManager.saveUserPassword(data: keyData)
-        let data = FZFileManager.readUserPassword()
+        FZUserPasswordUtils.saveUserPassword(data: keyData)
+        let data = FZUserPasswordUtils.readUserPassword()
         assert(data == keyData, "文件读写错误")
         
     }

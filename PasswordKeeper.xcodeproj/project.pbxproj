@@ -36,7 +36,7 @@
 		BF6B48DC2274553A0074AB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */; };
 		BF6B48E72274553A0074AB15 /* PasswordKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48E62274553A0074AB15 /* PasswordKeeperTests.swift */; };
 		BF6B48F22274553A0074AB15 /* PasswordKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */; };
-		BFAA3DEC2279B11A0034E5BF /* FZFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DEB2279B11A0034E5BF /* FZFileManager.swift */; };
+		BFAA3DEC2279B11A0034E5BF /* FZUserPasswordUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DEB2279B11A0034E5BF /* FZUserPasswordUtils.swift */; };
 		BFAA3DEE2279B1CC0034E5BF /* FZPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DED2279B1CC0034E5BF /* FZPath.swift */; };
 		BFAA3DF02279B1F20034E5BF /* FZNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DEF2279B1F20034E5BF /* FZNotification.swift */; };
 		BFAA3DF22279B23A0034E5BF /* FZConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DF12279B23A0034E5BF /* FZConstant.swift */; };
@@ -108,7 +108,7 @@
 		BF6B48ED2274553A0074AB15 /* PasswordKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeeperUITests.swift; sourceTree = "<group>"; };
 		BF6B48F32274553A0074AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFAA3DEB2279B11A0034E5BF /* FZFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZFileManager.swift; sourceTree = "<group>"; };
+		BFAA3DEB2279B11A0034E5BF /* FZUserPasswordUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZUserPasswordUtils.swift; sourceTree = "<group>"; };
 		BFAA3DED2279B1CC0034E5BF /* FZPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZPath.swift; sourceTree = "<group>"; };
 		BFAA3DEF2279B1F20034E5BF /* FZNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZNotification.swift; sourceTree = "<group>"; };
 		BFAA3DF12279B23A0034E5BF /* FZConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZConstant.swift; sourceTree = "<group>"; };
@@ -334,7 +334,7 @@
 				BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */,
 				BFAED8AB22792EEC0065F220 /* PasswordDB.swift */,
 				BFAED8AD2279393B0065F220 /* FZCryptoUtils.swift */,
-				BFAA3DEB2279B11A0034E5BF /* FZFileManager.swift */,
+				BFAA3DEB2279B11A0034E5BF /* FZUserPasswordUtils.swift */,
 				BF27E055227AD31400B77644 /* SecurityUtils.swift */,
 			);
 			path = DataCenter;
@@ -556,6 +556,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PasswordKeeperTests/Pods-PasswordKeeperTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
@@ -569,6 +570,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
@@ -592,6 +594,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
@@ -605,6 +608,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
@@ -639,7 +643,7 @@
 				BFAED8AE2279393B0065F220 /* FZCryptoUtils.swift in Sources */,
 				BF5950B32275FB5A00B7C06D /* UIImage+Extension.swift in Sources */,
 				BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */,
-				BFAA3DEC2279B11A0034E5BF /* FZFileManager.swift in Sources */,
+				BFAA3DEC2279B11A0034E5BF /* FZUserPasswordUtils.swift in Sources */,
 				BFCCE61722787606006B023A /* AddCell.swift in Sources */,
 				BFCCE61022787084006B023A /* Password.swift in Sources */,
 				BF5950B62275FB5A00B7C06D /* Bundle+Language.swift in Sources */,

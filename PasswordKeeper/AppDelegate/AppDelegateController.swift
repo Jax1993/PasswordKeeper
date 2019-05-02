@@ -39,10 +39,6 @@ extension AppDelegateController {
             SecurityUtils.shared.isDeviceLocked = false
             return
         }
-        let date0 = Date(timeIntervalSince1970: last)
-        print("date0: " + date0.toDetailString())
-        let date1 = Date()
-        print("date1: " + date1.toDetailString())
         let timePass = Date().timeIntervalSince1970 - last
         if timePass > FZConstant.DEVICE_LOCK_TIME {
             SecurityUtils.shared.isDeviceLocked = true

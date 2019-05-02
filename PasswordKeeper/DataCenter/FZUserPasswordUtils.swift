@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FZFileManager {
+class FZUserPasswordUtils {
     class func saveUserPassword(data: Data) -> Void {
         let url = URL(fileURLWithPath: FZPath.userPasswordFilePath())
         try! data.write(to: url)

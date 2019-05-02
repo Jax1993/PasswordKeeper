@@ -10,6 +10,7 @@ def pods
     pod 'SnapKit', '5.0.0'
     pod 'CryptoSwift', '1.0.0'
     pod 'PKHUD', '5.2.1'
+    pod 'KeychainAccess', '3.2.0'
 end
 
 target 'PasswordKeeper' do
