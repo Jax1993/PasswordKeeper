@@ -13,7 +13,7 @@ class AppDelegateController {
     let window = UIWindow()
     
     func appDidFinishLaunching() -> Void {
-        updateSecurityLock()
+        SecurityUtils.shared.isDeviceLocked = true
         setupLog()
         setupLanguage()
         setupViewControllers()
@@ -29,8 +29,7 @@ extension AppDelegateController {
     }
     
     func updateSecurityLock() -> Void {
-        
-        if !FileManager.default.fileExists(atPath: FZPath.userPasswordFilePath()) {
+        if !FZKeyChain.existPassword() {
             SecurityUtils.shared.isDeviceLocked = false
             return
         }
@@ -43,10 +42,11 @@ extension AppDelegateController {
         if timePass > FZConstant.DEVICE_LOCK_TIME {
             SecurityUtils.shared.isDeviceLocked = true
         }
+        SecurityUtils.shared.isDeviceLocked = false
     }
     
     func setupViewControllers() -> Void {
-        if !FileManager.default.fileExists(atPath: FZPath.userPasswordFilePath()) {
+        if !FZKeyChain.existPassword() {
             // 如果没有创建密码 去创建密码
             setupInputPasswordWindow(input: .first)
         } else {

@@ -30,13 +30,13 @@
 		BF5950BF2275FC6300B7C06D /* FZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950BC2275FC6300B7C06D /* FZColor.swift */; };
 		BF5950C12275FC6300B7C06D /* FZUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */; };
 		BF5950C52275FFE000B7C06D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF5950C72275FFE000B7C06D /* Localizable.strings */; };
+		BF595A13227B1E6D0002355F /* FZKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF595A12227B1E6D0002355F /* FZKeyChain.swift */; };
 		BF6B48D2227455390074AB15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48D1227455390074AB15 /* AppDelegate.swift */; };
 		BF6B48D7227455390074AB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48D5227455390074AB15 /* Main.storyboard */; };
 		BF6B48D92274553A0074AB15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48D82274553A0074AB15 /* Assets.xcassets */; };
 		BF6B48DC2274553A0074AB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6B48DA2274553A0074AB15 /* LaunchScreen.storyboard */; };
 		BF6B48E72274553A0074AB15 /* PasswordKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48E62274553A0074AB15 /* PasswordKeeperTests.swift */; };
 		BF6B48F22274553A0074AB15 /* PasswordKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */; };
-		BFAA3DEC2279B11A0034E5BF /* FZUserPasswordUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DEB2279B11A0034E5BF /* FZUserPasswordUtils.swift */; };
 		BFAA3DEE2279B1CC0034E5BF /* FZPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DED2279B1CC0034E5BF /* FZPath.swift */; };
 		BFAA3DF02279B1F20034E5BF /* FZNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DEF2279B1F20034E5BF /* FZNotification.swift */; };
 		BFAA3DF22279B23A0034E5BF /* FZConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA3DF12279B23A0034E5BF /* FZConstant.swift */; };
@@ -96,6 +96,7 @@
 		BF5950C8227600F500B7C06D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		BF5950C9227600F600B7C06D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		BF5950CA227600F600B7C06D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BF595A12227B1E6D0002355F /* FZKeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZKeyChain.swift; sourceTree = "<group>"; };
 		BF6B48CE227455390074AB15 /* PasswordKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B48D1227455390074AB15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6B48D6227455390074AB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		BF6B48ED2274553A0074AB15 /* PasswordKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B48F12274553A0074AB15 /* PasswordKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeeperUITests.swift; sourceTree = "<group>"; };
 		BF6B48F32274553A0074AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFAA3DEB2279B11A0034E5BF /* FZUserPasswordUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZUserPasswordUtils.swift; sourceTree = "<group>"; };
 		BFAA3DED2279B1CC0034E5BF /* FZPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZPath.swift; sourceTree = "<group>"; };
 		BFAA3DEF2279B1F20034E5BF /* FZNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZNotification.swift; sourceTree = "<group>"; };
 		BFAA3DF12279B23A0034E5BF /* FZConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZConstant.swift; sourceTree = "<group>"; };
@@ -334,8 +334,8 @@
 				BF5950BE2275FC6300B7C06D /* FZUserDefaults.swift */,
 				BFAED8AB22792EEC0065F220 /* PasswordDB.swift */,
 				BFAED8AD2279393B0065F220 /* FZCryptoUtils.swift */,
-				BFAA3DEB2279B11A0034E5BF /* FZUserPasswordUtils.swift */,
 				BF27E055227AD31400B77644 /* SecurityUtils.swift */,
+				BF595A12227B1E6D0002355F /* FZKeyChain.swift */,
 			);
 			path = DataCenter;
 			sourceTree = "<group>";
@@ -643,7 +643,6 @@
 				BFAED8AE2279393B0065F220 /* FZCryptoUtils.swift in Sources */,
 				BF5950B32275FB5A00B7C06D /* UIImage+Extension.swift in Sources */,
 				BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */,
-				BFAA3DEC2279B11A0034E5BF /* FZUserPasswordUtils.swift in Sources */,
 				BFCCE61722787606006B023A /* AddCell.swift in Sources */,
 				BFCCE61022787084006B023A /* Password.swift in Sources */,
 				BF5950B62275FB5A00B7C06D /* Bundle+Language.swift in Sources */,
@@ -651,6 +650,7 @@
 				BF5950BF2275FC6300B7C06D /* FZColor.swift in Sources */,
 				BF5950B22275FB5A00B7C06D /* UITextFiled+Extenstion.swift in Sources */,
 				BF5950B12275FB5A00B7C06D /* Date+Extension.swift in Sources */,
+				BF595A13227B1E6D0002355F /* FZKeyChain.swift in Sources */,
 				BF5950B52275FB5A00B7C06D /* String+Extension.swift in Sources */,
 				BF27E052227A862E00B77644 /* ShowViewController.swift in Sources */,
 				BF27E050227A84F100B77644 /* ShowNoteCell.swift in Sources */,

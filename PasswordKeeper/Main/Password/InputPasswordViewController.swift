@@ -144,7 +144,7 @@ extension InputPasswordViewController {
             return
         }
         let sha256 = FZCryptoUtils.encryptUserPassword(password: p)
-        FZUserPasswordUtils.saveUserPassword(data: sha256)
+        FZKeyChain.setPassword(data: sha256)
         gotoHome()
     }
     
@@ -154,7 +154,7 @@ extension InputPasswordViewController {
             return
         }
         let sha256 = FZCryptoUtils.encryptUserPassword(password: text)
-        let p = FZUserPasswordUtils.readUserPassword()
+        let p = FZKeyChain.getPassword()
         if sha256 != p {
             FZHUD.flash(msg: NSLocalizedString("password_error", comment: ""))
             return

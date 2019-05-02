@@ -67,7 +67,7 @@ extension ShowViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(ShowCell.self)) as! ShowCell
             var decrypted = ""
             if let tmp = password.password {
-                decrypted = FZCryptoUtils.decrypt(encrypted: tmp, key: FZUserPasswordUtils.readUserPassword())
+                decrypted = FZCryptoUtils.decrypt(encrypted: tmp, key: FZKeyChain.getPassword())
             }
             cell.reload(title: title, text: decrypted)
             return cell
@@ -75,7 +75,7 @@ extension ShowViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(ShowNoteCell.self)) as! ShowNoteCell
         var decrypted = ""
         if let tmp = password.note {
-            decrypted = FZCryptoUtils.decrypt(encrypted: tmp, key: FZUserPasswordUtils.readUserPassword())
+            decrypted = FZCryptoUtils.decrypt(encrypted: tmp, key: FZKeyChain.getPassword())
         }
         cell.reload(title: title, text: decrypted)
         return cell
