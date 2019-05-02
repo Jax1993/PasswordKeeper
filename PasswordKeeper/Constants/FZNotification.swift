@@ -9,6 +9,6 @@
 import UIKit
 
 extension Notification.Name {
-    public static let BalanceChangedNotification = NSNotification.Name("BalanceChangedNotification")
+    public static let DidAddPasswordNotification = NSNotification.Name("DidAddPasswordNotification")
 }
 

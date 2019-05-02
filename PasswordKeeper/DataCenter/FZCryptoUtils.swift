@@ -11,6 +11,7 @@ import CryptoSwift
 
 struct FZCryptoUtils {
     
+    /// 默认向量
     static let iv = "0000000000000000"
     
     /// SHA256

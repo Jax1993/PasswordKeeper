@@ -16,16 +16,29 @@ class AppDelegateController {
         setupLog()
         setupLanguage()
         setupViewControllers()
-        FZFileManager.saveUserPassword(data: FZCryptoUtils.encryptUserPassword(password: "qwerqwer"))
     }
 }
 
 extension AppDelegateController {
     func setupViewControllers() -> Void {
-        let tabbar = HomeTabBarViewController()
+        if FileManager.default.fileExists(atPath: FZPath.userPasswordFilePath()) {
+           setupTabbarRootWindow()
+        } else {
+            setupInputPasswordWindow()
+        }
         window.backgroundColor = UIColor.white
-        window.rootViewController = tabbar
         window.makeKeyAndVisible()
+    }
+    
+    func setupInputPasswordWindow() -> Void {
+        let vc = InputPasswordViewController(inputEnum: .first)
+        let navi = FZNavigationController(rootViewController: vc)
+        window.rootViewController = navi
+    }
+    
+    func setupTabbarRootWindow() -> Void {
+        let tabbar = HomeTabBarViewController()
+        window.rootViewController = tabbar
     }
     
     func setupLog() -> Void {

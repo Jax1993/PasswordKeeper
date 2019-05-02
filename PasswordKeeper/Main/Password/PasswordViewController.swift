@@ -10,6 +10,7 @@ import UIKit
 
 class PasswordViewController: UITableViewController {
 
+    var needRefresh = false
     var passwords: [Password] = []
     
     init() {
@@ -20,12 +21,30 @@ class PasswordViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addNotificationObserver()
         loadData()
         tableView.register(PasswordCell.self, forCellReuseIdentifier: NSStringFromClass(PasswordCell.self))
         setupItems()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if needRefresh {
+            loadDataAndRefresh()
+        }
+    }
+    
+    func loadDataAndRefresh() -> Void {
+        loadData()
+        tableView.reloadData()
     }
     
     func loadData() -> Void {
@@ -35,6 +54,13 @@ class PasswordViewController: UITableViewController {
     private func setupItems() -> Void {
         let item = UIBarButtonItem(image: UIImage(named: "add"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(didTapAdd))
         navigationItem.rightBarButtonItem = item
+    }
+    
+    func addNotificationObserver() -> Void {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(didReceiveAddPasswrodNotification(notification:)),
+                                               name: .DidAddPasswordNotification,
+                                               object: nil)
     }
 
 }
@@ -56,19 +82,26 @@ extension PasswordViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 68
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        
+        let password = passwords[indexPath.section]
+        let vc = ShowViewController(password: password)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 extension PasswordViewController {
-    @objc func didTapAdd() -> Void {
+    @objc
+    func didTapAdd() -> Void {
         let vc = AddViewController()
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc
+    func didReceiveAddPasswrodNotification(notification: Notification) -> Void {
+        needRefresh = true
     }
 }

@@ -12,6 +12,8 @@ class PasswordCell: UITableViewCell {
     
     lazy var imgView: UIImageView = {
         let img = UIImageView()
+        img.layer.cornerRadius = 18
+        img.layer.masksToBounds = true
         return img
     }()
     

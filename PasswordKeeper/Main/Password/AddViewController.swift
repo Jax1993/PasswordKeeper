@@ -142,6 +142,8 @@ extension AddViewController {
             return
         }
         FZHUD.flash(msg: NSLocalizedString("update_succeed", comment: ""))
+        NotificationCenter.default.post(name: .DidAddPasswordNotification, object: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     @objc func didTapCancel() -> Void {

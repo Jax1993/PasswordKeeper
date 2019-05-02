@@ -25,3 +25,10 @@
 "name_exist" = "名字已存在";
 "update_fail" = "更新失败";
 "update_succeed" = "更新成功";
+"input_password_holder" = "请输入密码";
+"input_password_again_holder" = "请再试一次";
+"input_password" = "输入密码";
+"password_notice" = "这个密码将用来解锁 APP, 并且加密你的数据, 请确保密码安全";
+"password_again" = "请再次输入密码";
+"password_too_short" = "密码位数太少";
+"password_error" = "密码错误";
