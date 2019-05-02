@@ -9,5 +9,5 @@
 import UIKit
 
 struct FZConstant {
-    static let DEVICE_LOCK_TIME = 10.0
+    static let DEVICE_LOCK_TIME = 180.0
 }

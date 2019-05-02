@@ -28,7 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        FZUserDefaults.saveValue(value: "\(Date().timeIntervalSince1970)", key: .lastLeaveTime)
+        if !SecurityUtils.shared.isDeviceLocked {
+            let date = Date()
+            print("save" + date.toDetailString())
+            FZUserDefaults.saveValue(value: "\(Date().timeIntervalSince1970)", key: .lastLeaveTime)
+        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

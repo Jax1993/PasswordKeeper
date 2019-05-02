@@ -170,6 +170,7 @@ extension InputPasswordViewController {
     
     func gotoHome() -> Void {
         FZHUD.show()
+        SecurityUtils.shared.isDeviceLocked = false
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1.5) {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             appDelegate.controller.setupTabbarRootWindow()
