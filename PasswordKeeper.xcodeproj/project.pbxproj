@@ -13,6 +13,7 @@
 		BF27E050227A84F100B77644 /* ShowNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27E04F227A84F100B77644 /* ShowNoteCell.swift */; };
 		BF27E052227A862E00B77644 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27E051227A862E00B77644 /* ShowViewController.swift */; };
 		BF27E054227A8C6A00B77644 /* InputPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27E053227A8C6A00B77644 /* InputPasswordViewController.swift */; };
+		BF27E056227AD31400B77644 /* SecurityUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27E055227AD31400B77644 /* SecurityUtils.swift */; };
 		BF5950942275F7AA00B7C06D /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */; };
 		BF5950962275F7CB00B7C06D /* AppDelegateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950952275F7CB00B7C06D /* AppDelegateController.swift */; };
 		BF5950982275F7FD00B7C06D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5950972275F7FD00B7C06D /* SettingViewController.swift */; };
@@ -75,6 +76,7 @@
 		BF27E04F227A84F100B77644 /* ShowNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNoteCell.swift; sourceTree = "<group>"; };
 		BF27E051227A862E00B77644 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		BF27E053227A8C6A00B77644 /* InputPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordViewController.swift; sourceTree = "<group>"; };
+		BF27E055227AD31400B77644 /* SecurityUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityUtils.swift; sourceTree = "<group>"; };
 		BF5950932275F7AA00B7C06D /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		BF5950952275F7CB00B7C06D /* AppDelegateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateController.swift; sourceTree = "<group>"; };
 		BF5950972275F7FD00B7C06D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				BFAED8AB22792EEC0065F220 /* PasswordDB.swift */,
 				BFAED8AD2279393B0065F220 /* FZCryptoUtils.swift */,
 				BFAA3DEB2279B11A0034E5BF /* FZFileManager.swift */,
+				BF27E055227AD31400B77644 /* SecurityUtils.swift */,
 			);
 			path = DataCenter;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				BFAA3DF22279B23A0034E5BF /* FZConstant.swift in Sources */,
 				BF27E04E227A84DC00B77644 /* ShowCell.swift in Sources */,
 				BFAA3DEE2279B1CC0034E5BF /* FZPath.swift in Sources */,
+				BF27E056227AD31400B77644 /* SecurityUtils.swift in Sources */,
 				BF5950942275F7AA00B7C06D /* HomeTabBarViewController.swift in Sources */,
 				BF5950A02275F98000B7C06D /* FZlog.swift in Sources */,
 				BFCCE6132278710B006B023A /* PasswordCell.swift in Sources */,

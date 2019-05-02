@@ -13,6 +13,7 @@ class AppDelegateController {
     let window = UIWindow()
     
     func appDidFinishLaunching() -> Void {
+        updateSecurityLock()
         setupLog()
         setupLanguage()
         setupViewControllers()
@@ -20,18 +21,47 @@ class AppDelegateController {
 }
 
 extension AppDelegateController {
+    func gotoUnlockIfNeeded() -> Void {
+        updateSecurityLock()
+        if SecurityUtils.shared.isDeviceLocked {
+            setupInputPasswordWindow(input: .unlock)
+        }
+    }
+    
+    func updateSecurityLock() -> Void {
+        
+        if !FileManager.default.fileExists(atPath: FZPath.userPasswordFilePath()) {
+            SecurityUtils.shared.isDeviceLocked = false
+            return
+        }
+        let lastLeaveTime = FZUserDefaults.valueForKey(key: .lastLeaveTime)
+        guard let last = Double(lastLeaveTime) else {
+            SecurityUtils.shared.isDeviceLocked = false
+            return
+        }
+        let timePass = Date().timeIntervalSince1970 - last
+        if timePass > FZConstant.DEVICE_LOCK_TIME {
+            SecurityUtils.shared.isDeviceLocked = true
+        }
+    }
+    
     func setupViewControllers() -> Void {
-        if FileManager.default.fileExists(atPath: FZPath.userPasswordFilePath()) {
-           setupTabbarRootWindow()
+        if !FileManager.default.fileExists(atPath: FZPath.userPasswordFilePath()) {
+            // 如果没有创建密码 去创建密码
+            setupInputPasswordWindow(input: .first)
         } else {
-            setupInputPasswordWindow()
+            if SecurityUtils.shared.isDeviceLocked {
+                setupInputPasswordWindow(input: .unlock)
+            } else {
+                setupTabbarRootWindow()
+            }
         }
         window.backgroundColor = UIColor.white
         window.makeKeyAndVisible()
     }
     
-    func setupInputPasswordWindow() -> Void {
-        let vc = InputPasswordViewController(inputEnum: .first)
+    func setupInputPasswordWindow(input: InputPasswordEnum) -> Void {
+        let vc = InputPasswordViewController(inputEnum: input)
         let navi = FZNavigationController(rootViewController: vc)
         window.rootViewController = navi
     }

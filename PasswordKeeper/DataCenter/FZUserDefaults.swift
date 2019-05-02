@@ -10,7 +10,7 @@ import UIKit
 
 enum FZDefaultsKey: String {
     case language = "fz_key_language"
-    case password = "fz_key_password"
+    case lastLeaveTime = "fz_key_last_leave_time"
 }
 
 class FZUserDefaults {

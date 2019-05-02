@@ -24,16 +24,19 @@ extension UIImage {
         return image!
     }
     
-    class func image(with str: String, font: UIFont, color: UIColor) -> UIImage {
-        let imgWidth = 200.0
-        let strWidth = str.width(withConstrainedHeight: CGFloat(imgWidth), font: font)
-        let strHeight = str.height(withConstrainedWidth: CGFloat(imgWidth), font: font)
+    class func image(char: String, font: UIFont = UIFont.boldSystemFont(ofSize: 26), color: UIColor = UIColor.white) -> UIImage {
+        let imgWidth = 100.0
+        let bgColor = FZColor.themeBlueColor
+        let strWidth = char.width(withConstrainedHeight: CGFloat(imgWidth), font: font)
+        let strHeight = char.height(withConstrainedWidth: CGFloat(imgWidth), font: font)
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: strWidth, height: strHeight))
         let img = renderer.image { ctx in
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.alignment = NSTextAlignment.center
-            let attrs = [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: color]
-            str.draw(with: CGRect(x: 0, y: 0, width: imgWidth, height: imgWidth), options: .usesLineFragmentOrigin, attributes: attrs, context: nil)
+            let attrs = [NSAttributedString.Key.font: font,
+                         NSAttributedString.Key.foregroundColor: color,
+                         NSAttributedString.Key.backgroundColor:bgColor]
+            char.draw(with: CGRect(x: 0, y: 0, width: imgWidth, height: imgWidth), options: .usesLineFragmentOrigin, attributes: attrs, context: nil)
         }
         return img
     }

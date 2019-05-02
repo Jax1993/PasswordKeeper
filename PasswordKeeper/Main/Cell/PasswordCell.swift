@@ -12,7 +12,7 @@ class PasswordCell: UITableViewCell {
     
     lazy var imgView: UIImageView = {
         let img = UIImageView()
-        img.layer.cornerRadius = 18
+        img.layer.cornerRadius = 20
         img.layer.masksToBounds = true
         return img
     }()
@@ -46,7 +46,7 @@ class PasswordCell: UITableViewCell {
         imgView.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(14)
             make.centerY.equalToSuperview()
-            make.size.equalTo(CGSize(width: 36, height: 36))
+            make.size.equalTo(CGSize(width: 40, height: 40))
         }
         titleLab.snp.makeConstraints { (make) in
             make.left.equalTo(imgView.snp.right).offset(20)
@@ -59,7 +59,10 @@ class PasswordCell: UITableViewCell {
     }
     
     func reload(password: Password) -> Void {
-        imgView.image = UIImage(named: "github")
+        let char = password.name.first ?? "A"
+        let charString = String(char)
+        let image = UIImage.image(char: charString)
+        imgView.image = image
         titleLab.text = password.name
         textLab.text = password.domain
     }
